@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,body{margin:0;}
+.header-image {
+	background: url('assets/img/halloween_pokemon.jpg') no-repeat;
+	background-size: cover;
+	height: 215px;
+	padding-top: 30px;
+
+	@media(max-width: 1000px) {
+		text-align: center;
+	}
+
+	@media(max-width: 500px) {
+		height: auto;
+		padding: 30px;
+	}
+}
+
+.top-container {
+	margin: 0 auto;
+  	max-width: 1000px;
+
+
+  	h1 {
+  		margin-top: 0;
+  		margin-left: 5px;
+  		color: #fff;
+
+  		@media(max-width: 500px) {
+			margin-bottom: 10px;
+			font-size: 1.5em;
+		}
+  	}
+  	h2 {
+  		margin-left: 5px;
+  		color: #fff;
+
+  		@media(max-width: 500px) {
+			font-size: 1em;
+		}
+  	}
+}
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.search-input {
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 15px;
+	margin-bottom: 30px;
+	border: 1px solid;
+	margin-top: -25px;
+}
+
+.square {
+	position: relative;
+	flex-basis: calc(25% - 10px);
+	margin: 5px;
+	border: 1px solid;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	@media (max-width: 900px) {
+		flex-basis: calc(33.33% - 10px);
+	} 
+
+	@media (max-width: 630px) {
+		flex-basis: calc(50% - 10px);
+	}
+
+  	&::before {
+	  content: '';
+	  display: block;
+	  padding-top: 100%;
+	}
+
+	&__content {
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	}
+	&__title {
+		text-transform: capitalize; 
+		font-size: 1.8em;
+
+		@media (max-width: 630px) {
+			font-size: 1.5em;
+		}
+    }
+    &__link {
+    	vertical-align: bottom;
+    	position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 15px;
+	    margin: auto;
+	    color: #1072ec;
+	    font-weight: bold;
+    }
+}
+
+.copyright {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+
