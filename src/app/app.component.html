@@ -2,7 +2,7 @@
   <div class="header-image">
     <div class="top-container">
       <h1>
-        Welcome to {{mainTitle}}
+        Welcome to {{mainTitle}} 
       </h1>
       <h2>This is probably the most exciting app<br class="remove-break"> you've ever seen!  It's ok, you can admit it.<br class="remove-break"> Just admit it.</h2>
     </div>
@@ -15,7 +15,8 @@
       <div class="square" [ngStyle]="{ 'background-image': 'url(' + pokemon.sprites.front_shiny + ')'}">
         <div class="square__content">
           <h3 class="square__title">{{pokemon.name}}</h3>
-          <a class="square__link" target="_blank" href="https://pokeapi.co/api/v2/pokemon/{{pokemon.id}}">More Info</a>
+
+          <a class="square__link" target="_blank" href="https://bulbapedia.bulbagarden.net/wiki/{{pokemon.name}}_(Pok%C3%A9mon)">More Info</a>
         </div>
       </div>
     </ng-container> 
